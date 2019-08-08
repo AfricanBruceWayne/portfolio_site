@@ -10,8 +10,15 @@ app.set('view engine', 'ejs');
 // set path for static assets
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 app.get('/', (req, res) => res.render('index'))
 app.get('/about', (req, res) => res.render('about'))
 app.get('/work', (req, res) => res.render('work'))
 app.get('/contact', (req, res) => res.render('contact'))
+
+// Project Routes
+app.get('/musicStore', (req, res) => res.render('musicStore'))
+
+
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
