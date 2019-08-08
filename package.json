@@ -1,15 +1,23 @@
 {
   "name": "work_portfolio2019",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple portfolio using Express",
+  "engines": {
+    "node": "10.x"
+  },
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "node test.js"
   },
   "author": "Thasi Mhlongo",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.2",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "request": "^2.88.0",
+    "tape": "^4.11.0"
   }
 }
