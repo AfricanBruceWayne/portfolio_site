@@ -19,6 +19,7 @@ app.get('/contact', (req, res) => res.render('contact'))
 
 // Project Routes
 app.get('/musicStore', (req, res) => res.render('musicStore'))
+app.get('/johnDoe', (req, res) => res.render('johnDoe'))
 
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
